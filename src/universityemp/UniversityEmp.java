@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package universityemp;
 
 /**
@@ -14,15 +8,22 @@ public class UniversityEmp {
 
     
     public static void main(String[] args) {
-        Faculty faculty1 = new Faculty("Richard", "Kaune", 85751.38, "Technology");
-        System.out.println(faculty1.returnDept());
-        System.out.println(faculty1.returnName());
-        System.out.println(faculty1.toString());
+        Faculty faculty = new Faculty("Jordan", "Klug", 85751.38, "Technology");
+        System.out.println(faculty.returnDept());
+        System.out.println(faculty.returnName());
+        System.out.println(faculty.toString());
+        System.out.println("\n#########################################################\n");
         
-        UEmployee uemp = new UEmployee("Richard1", "Kaune1", 105649.34);
+        UEmployee uemp = new UEmployee("John", "Smith", 95649.34);
         System.out.println(uemp.returnName());
         System.out.println(uemp.returnSalary());
         System.out.println(uemp.toString());
+        System.out.println("\n#########################################################\n");
+        
+        Staff staff = new Staff("Jane", "Doe", 102371.67, "Principal");
+        System.out.println(staff.returnJob());
+        System.out.println(staff.returnName());
+        System.out.println(staff.toString());
     }
     
 }
